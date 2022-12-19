@@ -1,120 +1,110 @@
-*{
-    box-sizing: border-box;
-    font-family: sans-serif;
-    margin: 0px;
-    padding: 0px;
-    border: none;
-    background-color:#424549;
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  background-color: #424549;
 }
-body{
-    overflow: hidden;
+body {
+  overflow: hidden;
 }
-.inicio{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:#424549;
+.inicio {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #424549;
 }
-.loding{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:#424549;
+.loding {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #424549;
 }
-.inicio::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    border: 100px solid transparent;
-    border-top: 100px solid #282b30;
-    border-right: 100px solid #282b30;
-    bottom: 0;
-    border-top: 100px solid #282b30;
-    border-right: 100px solid #282b30;
-    border-bottom: 0px solid #282b30;
+.inicio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 100px solid transparent;
+  border-top: 100px solid #282b30;
+  border-right: 100px solid #282b30;
+  bottom: 0;
+  border-top: 100px solid #282b30;
+  border-right: 100px solid #282b30;
+  border-bottom: 0px solid #282b30;
 }
-.loding::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    border: 100px solid transparent;
-    border-top: 100px solid #282b30;
-    border-right: 100px solid #282b30;
-    bottom: 0;
-    border-top: 100px solid #282b30;
-    border-right: 100px solid #282b30;
-    border-bottom: 0px solid #282b30;
-    animation: over-side2 2s infinite alternate;
+.loding::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 100px solid transparent;
+  border-top: 100px solid #282b30;
+  border-right: 100px solid #282b30;
+  bottom: 0;
+  border-top: 100px solid #282b30;
+  border-right: 100px solid #282b30;
+  border-bottom: 0px solid #282b30;
+  animation: over-side2 2s infinite alternate;
 }
-.inicio::after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border: 100px solid transparent;
-    border-bottom: 100px solid #282b30;
-    border-left: 100px solid #282b30;
-    border-top: 0px solid #282b30;
-    top: 0
+.inicio::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: 100px solid transparent;
+  border-bottom: 100px solid #282b30;
+  border-left: 100px solid #282b30;
+  border-top: 0px solid #282b30;
+  top: 0;
 }
-.loding::after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border: 100px solid transparent;
-    border-bottom: 100px solid #282b30;
-    border-left: 100px solid #282b30;
-    border-top: 0px solid #282b30;
-    top: 0;
-    animation: over-side1 2s infinite alternate;
+.loding::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: 100px solid transparent;
+  border-bottom: 100px solid #282b30;
+  border-left: 100px solid #282b30;
+  border-top: 0px solid #282b30;
+  top: 0;
+  animation: over-side1 2s infinite alternate;
 }
 @keyframes over-side1 {
-    from {
-        transform: translateX(0px);
-    }
-    to {
-        transform: translateX(-200px);
-    }
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-200px);
+  }
 }
 @keyframes over-side2 {
-    from {
-        transform: translateX(0px);
-    }
-    to {
-        transform: translateX(200px);
-    }
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(200px);
+  }
 }
-.inicio img{
-    display: flex;
-    background-color:#424549;
-    width: 300px;
-    cursor: pointer;
-    border-radius: 100%;
-    animation: go-back 2s infinite alternate;
+.inicio img {
+  display: flex;
+  background-color: #424549;
+  width: 300px;
+  cursor: pointer;
+  border-radius: 100%;
+  animation: go-back 2s infinite alternate;
 }
-.inicio img:hover{
-    animation: none;
+.inicio img:hover {
+  animation: none;
 }
 @keyframes go-back {
-    from {
-      transform: translatey(25px);
-    }
-    to {
-      transform: translatey(-25px);
-    }
-}
-::-webkit-scrollbar{
-    width: 5px;
-    height: 5px;
-}
-::-webkit-scrollbar-track{
-    background-color:#36393e;
-}
-::-webkit-scrollbar-thumb{
-    background-color:#282b30;
+  from {
+    transform: translatey(25px);
+  }
+  to {
+    transform: translatey(-25px);
+  }
 }
